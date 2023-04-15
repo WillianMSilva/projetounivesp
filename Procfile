@@ -1,0 +1,1 @@
+web: gunicor projetounivesp.wsgi --log-file -
