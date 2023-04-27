@@ -11,8 +11,13 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>.
 <!doctype html>
 <html lang="en">
-  ...
-</html>
+<head>
+    <meta charset="UTF-8">
+    <title>Grãos da Terra</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'graosdaterra/style.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
@@ -53,7 +58,7 @@
 </header>
 
 <main>
-
+<br>
   <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
@@ -67,8 +72,8 @@
 
         <div class="container">
           <div class="carousel-caption text-start">
-            <h1><font style="text-shadow: 5px 8px 9px black;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ZeroMilk</font></font></font></h1>
-            <p><font style="text-shadow: 5px 8px 9px black;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mesmo sem leite, se destaca pela cremosidade.</font></font></font></p>
+            <h1><font style="text-shadow: 5px 8px 9px black;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"></font></font></font></h1>
+            <p><font style="text-shadow: 5px 8px 9px black;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"></font></font></font></p>
 
           </div>
         </div>
@@ -78,8 +83,8 @@
 
         <div class="container">
           <div class="carousel-caption">
-            <h1><font style="text-shadow: 5px 8px 9px black;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pão de Forma</font></font></font></h1>
-            <p><font style="text-shadow: 5px 8px 9px black;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sem glúten, Sem lactose, Saboro e Macio.</font></font></font></p>
+            <h1><font style="text-shadow: 5px 8px 9px black;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"></font></font></font></h1>
+            <p><font style="text-shadow: 5px 8px 9px black;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"></font></font></font></p>
 
           </div>
         </div>
@@ -90,8 +95,8 @@
         <div class="container">
           <div class="carousel-caption text-end">
 
-            <h1><font style="vertical-align: inherit;"><font style="text-shadow: 5px 8px 9px black;"><font style="vertical-align: inherit;">Amendomel</font></font></font></h1>
-            <p><font style="text-shadow: 10px 8px 8px black;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">LANÇAMEMTO Milk + Whey com Lascas de Chocolate Belga.</font></font></font></p>
+            <h1><font style="vertical-align: inherit;"><font style="text-shadow: 5px 8px 9px black;"><font style="vertical-align: inherit;"></font></font></font></h1>
+            <p><font style="text-shadow: 10px 8px 8px black;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"></font></font></font></p>
 
           </div>
         </div>
@@ -109,13 +114,13 @@
 
   </div>
 
-
+</br>
 
 
   <!-- Marketing messaging and featurettes
   ================================================== -->
   <!-- Wrap the rest of the page in another container to center all the content. -->
-
+<br>
   <div class="container">
 
 
@@ -181,7 +186,7 @@
       {% if messages %}
       <ul class="messages"
           {% for message in messages %}
-          <li {% if messages.tags %}class="alert alert-{{message.tags}}"{% endif %}>{{ message }}</li>
+      <li {% if messages.tags %}class="alert alert-{{message.tags}}"{% endif %}>{{ message }}</li>
           {% endfor %}
       </ul>
       {% endif %}
@@ -200,7 +205,7 @@
 
       </div>
     </div>
-
+</br>
     <hr class="featurette-divider">
 
     <!-- /END THE FEATURETTES -->
@@ -211,14 +216,14 @@
   <!-- FOOTER -->
   <footer class="container">
     <p class="float-end"><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">De volta ao topo</font></font></a></p>
-    <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">© 2017–2021 Company, Inc. · </font></font><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Privacidade</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> · </font></font><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Termos</font></font></a></p>
+    <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> </font></font><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"></font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> </font></font><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"></font></font></a></p>
   </footer>
 </main>
+<!--
+
+    <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script><div id="goog-gt-" class="skiptranslate VIpgJd-yAWNEb-L7lbkb" dir="ltr"><div style="padding: 8px;"><div><div class="VIpgJd-yAWNEb-l4eHX"><img src="https://www.gstatic.com/images/branding/product/1x/translate_24dp.png" width="20" height="20" alt="Google Tradutor"></div></div></div><div style="padding: 8px; float: left; width: 100%;"><h1 class="VIpgJd-yAWNEb-r4nke VIpgJd-yAWNEb-mrxPge"></h1></div><div style="padding: 8px;"><div class="VIpgJd-yAWNEb-nVMfcd-fmcmS"></div></div><div class="VIpgJd-yAWNEb-cGMI2b" style="padding: 8px;"><div class="VIpgJd-yAWNEb-Z0Arqf-PLDbbf"><span class="VIpgJd-yAWNEb-Z0Arqf-hSRGPd">Sugerir uma tradução melhor</span></div><div class="VIpgJd-yAWNEb-fw42Ze-Z0Arqf-haAclf"><hr style="color: #ccc; background-color: #ccc; height: 1px; border: none;"><div class="VIpgJd-yAWNEb-Z0Arqf-H9tDt"></div></div></div><div class="VIpgJd-yAWNEb-jOfkMb-Ne3sFf" style="display: none;"></div></div>
 
 
-    <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script><div id="goog-gt-" class="skiptranslate VIpgJd-yAWNEb-L7lbkb" dir="ltr"><div style="padding: 8px;"><div><div class="VIpgJd-yAWNEb-l4eHX"><img src="https://www.gstatic.com/images/branding/product/1x/translate_24dp.png" width="20" height="20" alt="Google Tradutor"></div></div></div><div style="padding: 8px; float: left; width: 100%;"><h1 class="VIpgJd-yAWNEb-r4nke VIpgJd-yAWNEb-mrxPge">Texto original</h1></div><div style="padding: 8px;"><div class="VIpgJd-yAWNEb-nVMfcd-fmcmS"></div></div><div class="VIpgJd-yAWNEb-cGMI2b" style="padding: 8px;"><div class="VIpgJd-yAWNEb-Z0Arqf-PLDbbf"><span class="VIpgJd-yAWNEb-Z0Arqf-hSRGPd">Sugerir uma tradução melhor</span></div><div class="VIpgJd-yAWNEb-fw42Ze-Z0Arqf-haAclf"><hr style="color: #ccc; background-color: #ccc; height: 1px; border: none;"><div class="VIpgJd-yAWNEb-Z0Arqf-H9tDt"></div></div></div><div class="VIpgJd-yAWNEb-jOfkMb-Ne3sFf" style="display: none;"></div></div>
-
-
-
+-->
 
 </body>
